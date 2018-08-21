@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>植物大战僵尸</title>
+    <script src="./js/Game.js"></script>
+    <script src="./js/Map.js"></script>
+    <script src="./js/Flower.js"></script>
+    <script src="./js/Peas.js"></script>
+    <script src="./js/Zombie.js"></script>
+    <script src="./js/Sun.js"></script>
+    <script src="./js/SunScore.js"></script>
+</head>
+<body onload="start()">
+
+</body>
+<script>
+    function start() {
+
+
+        game = new Game();
+        game.init();
+        setInterval('game.run()', 100);
+        document.onmousemove = function (ev) {
+            game.onmousemove(ev);
+        }
+    }
+
+</script>
+</html>

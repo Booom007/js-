@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>找你妹</title>
+    <script src="js/Game.js"></script>
+    <script src="js/Map.js"></script>
+    <script src="js/PicBg.js"></script>
+    <script src="js/MoveBg.js"></script>
+    <script src="js/Img.js"></script>
+    <script src="js/TimeView.js"></script>
+    <script src="js/Types.js"></script>
+    <script src="js/Score.js"></script>
+
+</head>
+<body onload="start()">
+
+</body>
+<script>
+    var game;
+    function start() {
+        // 创建游戏对象
+        game=new Game();
+        // 游戏初始化
+        game.init();
+        setInterval('run()',1000);
+    }
+    function run() {
+        game.run();
+    }
+
+</script>
+</html>
